@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando números</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <h2>Como fizemos a soma dos números?</h2>
+    <p>Começamos incluindo os inputs, colocando <mark>ONCLICK"somar"</mark> para dar a ação de somar após clicar dentro do input:button.</p>
+    <p>Dentro de <mark>SCRIPT</mark> criamos 3 VARs e lincamos com os inputs criados. Nas VARs n1 e n2 usamos o <mark>Number(VAR.value)</mark> para fazermos a conversão de script para número, criamos a VAR s que é a soma de tn1 + tn2 e por ultimo imputamos o <mark>res.innerHTML</mark> e incluimos o testo que aparecerá quando o botão de soma for clicado mais o resultado das soma das variaveis.</p>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

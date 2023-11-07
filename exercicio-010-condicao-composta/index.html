@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COndição composta</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Nacionalidade de orígem: <input type="text" name="nac" id="nac">
+    <input type="button" value="Pesquisar" onclick="carregar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function carregar() {
+            var nacio = window.document.getElementById(`nac`)
+            var res = window.document.getElementById(`res`)
+            if (nacio == Brasil) {
+                res.innerHTML = `<p>Voce nasceu no <strong>Brasil</strong>, portando voce é <strong>Brasileiro</strong></p>`
+            }
+            else (nacio != Brasil) {
+                res.innerHTML = `<p>Seu país de orígem é <strong>${nacio}</strong> portanto voce é <strong>gringo</strong>.</p>`
+            }
+        }
+    </script>
+    
+</body>
+</html>

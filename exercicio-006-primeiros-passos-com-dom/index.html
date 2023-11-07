@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(204, 175, 10, 0.904);
+            font: normal 1.6em arial;
+        }
+        img {
+            width: 700px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprndendo a usar o <strong>DOM</strong>  em JavaScript</p>
+    <div>Clique em mim</div>
+    <h2>Exemplo arvore hierárquica DOM</h2>
+    <img src="imagem/arvore-dom.png" alt="dom">
+    <h2>DOM - Document Object Model</h2>
+    <h3>Fomas de usar o DOM</h3>
+    <h4>Marca</h4>
+    <p>getElementByTagName</p>
+    <p>Código - window.document.getElementByTagName "caso queira selecionar um elemento especifico colocar o elemento entre ('') e indicar a ordem do elemento, sempre de começando do 0, entre [].</p>
+    <h4>ID</h4>
+    <p>getElementsByid</p>
+    <p>Código - window.document.getElementsByid</p>
+    <h4>Nome</h4>
+    <p>getElementsByName </p>
+    <p>Código - window.document.getElementsByName "caso queira selecionar um name especifico colocar o name entre ('') e indicar a ordem do name, sempre de começando do 0, entre [].</p>
+    <h4>Classe</h4>
+    <p>getElementsByClassNeme</p>
+    <p>Código - window.document.getElementsByClassNeme "caso queira selecionar uma classe especifíca colocar a clase entre ('') e indicar a ordem da classe, sempre de começando do 0, entre []</p></p>
+    <h4>Seletor</h4>
+    <p>querySelector</p>
+    <p>Código - window.document.querySelector</p>
+    
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(' <br> Está escrito assim : ' + p1.innerText)
+    </script>
+    
+</body>
+</html>

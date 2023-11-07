@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 18pt arial;
+            background-color: purple;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <h1>Eventos DOM</h1>
+    <p>Fizemos este exemplo para mostrar algumas ações que podemos fazer com o DOM. Começamos incluindo um <mark>ID</mark> no elemento, isso dentro da parte <mark>HTML</mark> do documento, dentro do <mark>SCRIPT</mark> criamos o <mark>VAR</mark> e lincamos o VAR com o ID usando o <mark>window.document.getElementById</mark>, nas linhas abaixo incluímos 3 linhas de <mark>area.addEventListener</mark>, para identificar a ação que será feita. Na linha 1 incluímos o <mark>'CLICK'</mark>, para dar o comando que acontecerá algo após o click, e colocamos <mark>CLICAR</mark> para lincar com o <mark>FUNCTION</mark>. Nas outras functions foram feitos quase os mesmos processos, mudando a ação na segunda linha usamos o <mark>mouseenter</mark>, para indicar o que acontecerá quando o mouse entrar, e lincamos com a function usando o <mark>ENTRAR</mark> e na terceira linha incluímos a ação <mark>'MOUSEOUT'</mark>, ação para quando o mouse sair, e lincamos com a function usando o <mark>SAIR</mark>. </p>
+    <p>Depois abrimos o primeiro function com o nome de <mark>clicar( )</mark>, dentro do function colocamos <mark>area.innerText = 'Clicou'</mark> e <mark>area.style.background = 'red'</mark>, para personalizar a ação e o mesmo foi feito nas outras functions.</p>
+
+
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou'
+            area.style.background = 'blue'
+        }
+        function sair() {
+            area.innerText = 'Saiu'
+            area.style.background = 'green'
+        }
+    </script>
+    
+</body>
+</html>

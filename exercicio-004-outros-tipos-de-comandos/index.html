@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos comandos</title>
+    <style>
+        body {
+            font: normal 18 pt arial; ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alguns exemplos de formatações</h1>
+    <p>Usamos <mark>document.write</mark>, para criar uma caíxa de texto, dentro do <mark>(``)</mark> informamos o que estará escríto na caíxa e incluímos <mark>n1.lenght</mark>, para que tenhamos o resultado de quantos algoritmos existem no dado recebido, também colocamos o <mark>n1.toUpperCase</mark> para que o dado colhido fique em fonte <mark>maiúscula</mark> e usamos o <mark>.toLowerCase</mark> para os dados colhido fiquem com a fonte <mark>minúscula</mark>. </p>
+    <script>
+        var nome = window.prompt('Qual seu nome')
+        document.write(`Ola, <strong>${nome}</strong>! Seu nome tem <strong>${nome.length}</strong> letras <br>`) 
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis com números</title>
+    <style>
+        body {
+            background-color: darkblue;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variáveis com números</h1>
+    <p>Fizemos este exemplo com caíxas de texto que soman os valores, incluímos a TAG <mark>VAR</mark> e a variavel <mark>n1 = Number</mark>, para converter <mark>SCRIPT</mark> para <mark>NUMBER</mark>, também usamos <mark>${}</mark> dentro dos colchetes o nome da variavel.</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
